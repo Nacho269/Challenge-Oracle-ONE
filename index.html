@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador de texto</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="reset.css">
+    <script src="miScript.js"></script> 
+</head>
+    <body>
+        <header>
+            <div class ="caja">
+                <h1><img><img src="imgenes/Alura.png" alt="Image" height="35" width="35" ></h1> 
+                <nav>
+                    <ul>
+                        <li><a href ="https://www.linkedin.com/in/ignacio-alvarado269/"> <img src="imgenes/Linkedin.png" alt="Image" height="25" width="25"></a></li>
+                        <li><a href ="https://github.com/Nacho269"> <img src="imgenes/Github.png" alt="Image" height="25" width="25"></a></li>
+                        <li><a> by Ignacio Alvarado</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        
+        <main>
+            <div class ="textoInicial">
+            <textarea name="texto" class="textoInicial" id="texto"cols="30"rows="10"placeholder="Ingresa el texto aquí"></textarea>
+            </div>
+            <p class="indicacion"><img src="imgenes/importante.png" alt="Image" height="15" width="15"> Solo letras miniculas y sin acentos</p>
+            <nav class="botones">
+                <ul>
+                    <li><input type="submit" value="Encriptar" class="encriptar"onclick="encriptar()"> </li>
+                    <li><input type="submit" value="Desencriptar" class="desencriptar"onclick="desencriptar()"></li>
+                </ul>
+            </nav>    
+            <div class="encriptado"> 
+                <img src="imgenes/muñeco.png" alt="" id="muñeco" />
+                <div class="mensaje-encriptado" id="mensaje-encriptado"> <h2 id="titulo-mensaje">Ningún mensaje fue encontrado</h2> <p id="parrafo">Ingresa el texto que deseas encriptar o desencriptar</p>
+                </div> 
+            </div>
+        </main>
+    </body>
+</html>
